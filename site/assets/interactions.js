@@ -4,25 +4,38 @@
 
   // ---- scroll reveal ----
   var revealEls = document.querySelectorAll('.reveal');
+  function revealNow(el) { el.classList.add('in-view'); }
   if (reduceMotion || !('IntersectionObserver' in window)) {
-    revealEls.forEach(function (el) { el.classList.add('in-view'); });
+    revealEls.forEach(revealNow);
   } else {
     var io = new IntersectionObserver(
       function (entries) {
         entries.forEach(function (entry) {
           if (entry.isIntersecting) {
-            entry.target.classList.add('in-view');
+            revealNow(entry.target);
             io.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+      { threshold: 0, rootMargin: '0px 0px -10% 0px' }
     );
     revealEls.forEach(function (el, i) {
       el.style.transitionDelay = (i % 6) * 70 + 'ms';
-      io.observe(el);
+      // Elements already on/near screen at load (above-the-fold content,
+      // or a very tall viewport) may never fire a fresh IO callback since
+      // nothing changes after this point — reveal them immediately.
+      var rect = el.getBoundingClientRect();
+      var alreadyVisible = rect.top < window.innerHeight * 1.1 && rect.bottom > 0;
+      if (alreadyVisible) {
+        revealNow(el);
+      } else {
+        io.observe(el);
+      }
     });
   }
+  // Safety net: never let content stay invisible if the observer
+  // misbehaves for any reason (e.g. font-swap layout shifts).
+  setTimeout(function () { revealEls.forEach(revealNow); }, 1200);
 
   // ---- count-up stats ----
   var statEls = document.querySelectorAll('.stat b[data-target]');
