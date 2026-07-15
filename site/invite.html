@@ -63,7 +63,8 @@
         <textarea name="problem" required></textarea>
       </label>
       <div class="full">
-        <button type="submit" class="btn">Submit Request</button>
+        <button type="submit" class="btn" id="invite-submit">Submit Request</button>
+        <div id="invite-status" style="margin-top:16px;font-size:0.9rem"></div>
       </div>
     </form>
   </section>
@@ -73,19 +74,43 @@
 function submitInvite(e){
   e.preventDefault();
   var f = e.target;
-  var body = [
-    "Name: " + f.name.value,
-    "Email: " + f.email.value,
-    "Firm: " + f.firm.value,
-    "Portfolio / company size: " + f.size.value,
-    "Current systems: " + f.systems.value,
-    "",
-    "Most expensive operational problem:",
-    f.problem.value
-  ].join("\n");
-  var mailto = "mailto:hello@epheros.ai?subject=" + encodeURIComponent("Private Invite Request — " + f.firm.value)
-    + "&body=" + encodeURIComponent(body);
-  window.location.href = mailto;
+  var statusEl = document.getElementById('invite-status');
+  var btn = document.getElementById('invite-submit');
+  var payload = {
+    name: f.name.value,
+    email: f.email.value,
+    firm: f.firm.value,
+    size: f.size.value,
+    systems: f.systems.value,
+    problem: f.problem.value
+  };
+  btn.disabled = true;
+  btn.textContent = 'Sending...';
+  statusEl.textContent = '';
+  statusEl.style.color = '';
+
+  fetch('/api/invite', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify(payload)
+  }).then(function(r){ return r.json().then(function(d){ return {status:r.status, body:d}; }); })
+    .then(function(res){
+      if (res.body && res.body.ok) {
+        f.reset();
+        statusEl.style.color = 'var(--gold)';
+        statusEl.textContent = "Request received — we'll follow up at the email you provided.";
+        btn.textContent = 'Submit Request';
+      } else {
+        throw new Error((res.body && res.body.error) || 'Submission failed');
+      }
+    })
+    .catch(function(){
+      statusEl.style.color = '#d97757';
+      statusEl.innerHTML = 'Something went wrong. Please email us directly at '
+        + '<a href="mailto:hello@epheros.ai" style="color:var(--gold)">hello@epheros.ai</a> instead.';
+      btn.textContent = 'Submit Request';
+    })
+    .finally(function(){ btn.disabled = false; });
   return false;
 }
 </script>
@@ -99,6 +124,7 @@ function submitInvite(e){
       <a href="/for-private-equity">For Private Equity</a>
       <a href="/pricing">Pricing</a>
       <a href="/invite">Request Invite</a>
+      <a href="/privacy">Privacy</a>
       <a href="mailto:hello@epheros.ai">hello@epheros.ai</a>
     </nav>
   </div>

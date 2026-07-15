@@ -68,6 +68,9 @@ nav.links a.link.active{color:var(--gold)}
   nav.links a.btn{margin-top:20px}
   .nav-toggle-label{display:block}
   .nav-toggle:checked ~ .inner nav.links{opacity:1;pointer-events:auto;transform:translateY(0)}
+  .nav-toggle:checked ~ .inner .nav-toggle-label span{background:transparent}
+  .nav-toggle:checked ~ .inner .nav-toggle-label span::before{top:0;transform:rotate(45deg)}
+  .nav-toggle:checked ~ .inner .nav-toggle-label span::after{top:0;transform:rotate(-45deg)}
 }
 
 .btn{
@@ -111,7 +114,8 @@ h2.section-title{font-size:clamp(1.7rem,3vw,2.3rem);margin:0 0 16px;max-width:68
 p.section-lede{color:var(--muted);font-size:1.05rem;max-width:600px;margin:0 0 56px}
 
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
-.grid.cols-2{grid-template-columns:repeat(auto-fit,minmax(340px,1fr))}
+.grid.cols-2{grid-template-columns:repeat(2,1fr)}
+@media (max-width:700px){.grid.cols-2{grid-template-columns:1fr}}
 .card{background:var(--card);padding:30px}
 .card .icon,.card .icon-lg{margin-bottom:16px}
 .card h3{margin:0 0 10px;font-size:1.02rem;font-weight:700;font-family:"Inter"}
@@ -173,7 +177,7 @@ p.section-lede{color:var(--muted);font-size:1.05rem;max-width:600px;margin:0 0 5
 
 .quote{border-left:2px solid var(--gold);padding-left:24px;color:var(--muted);font-style:italic;font-size:1.05rem;max-width:640px}
 
-table.compare{width:100%;border-collapse:collapse;border:1px solid var(--line)}
+table.compare{width:100%;min-width:520px;border-collapse:collapse;border:1px solid var(--line)}
 table.compare th,table.compare td{padding:18px 22px;border-bottom:1px solid var(--line);text-align:left;font-size:0.93rem}
 table.compare th{color:var(--gold);font-size:0.75rem;letter-spacing:0.04em;background:var(--card);font-weight:700}
 table.compare td{color:var(--muted)}

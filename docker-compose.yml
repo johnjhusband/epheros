@@ -5,3 +5,14 @@ services:
     restart: unless-stopped
     ports:
       - "127.0.0.1:3001:80"
+  api:
+    build: ./api
+    container_name: epheros-api
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3002:3002"
+    volumes:
+      - epheros-api-data:/data
+
+volumes:
+  epheros-api-data:
