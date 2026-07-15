@@ -177,12 +177,21 @@ p.section-lede{color:var(--muted);font-size:1.05rem;max-width:600px;margin:0 0 5
 
 .quote{border-left:2px solid var(--gold);padding-left:24px;color:var(--muted);font-style:italic;font-size:1.05rem;max-width:640px}
 
-table.compare{width:100%;min-width:520px;border-collapse:collapse;border:1px solid var(--line)}
+table.compare{width:100%;border-collapse:collapse;border:1px solid var(--line)}
 table.compare th,table.compare td{padding:18px 22px;border-bottom:1px solid var(--line);text-align:left;font-size:0.93rem}
 table.compare th{color:var(--gold);font-size:0.75rem;letter-spacing:0.04em;background:var(--card);font-weight:700}
 table.compare td{color:var(--muted)}
 table.compare tr:last-child td{border-bottom:none}
 table.compare td:first-child,table.compare th:first-child{color:var(--fg);font-weight:600}
+
+@media (max-width:640px){
+  table.compare thead,table.compare tr:first-child{display:none}
+  table.compare, table.compare tbody, table.compare tr, table.compare td{display:block;width:100%}
+  table.compare tr{border-bottom:1px solid var(--line);padding:16px 0}
+  table.compare tr:last-child{border-bottom:none}
+  table.compare td{border-bottom:none;padding:6px 22px}
+  table.compare td::before{content:attr(data-label);display:block;color:var(--gold);font-size:0.72rem;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px}
+}
 
 /* ---------- diagram components (native, replacing deck screenshots) ---------- */
 .diagram{border:1px solid var(--line);background:var(--bg-elev);padding:56px 40px}
