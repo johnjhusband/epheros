@@ -12,8 +12,10 @@
 <body>
 
 <header class="nav">
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
   <div class="wrap inner">
     <a class="wordmark" href="/">EPHEROS</a>
+    <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
     <nav class="links">
       <a class="link" href="/">Home</a>
       <a class="link" href="/solution">Solution</a>
@@ -34,26 +36,59 @@
 </div>
 
 <div class="wrap">
-  <section style="padding-top:0">
-    <div class="split">
-      <div>
-        <h2 class="section-title">Applications are reviewed by invitation only.</h2>
-        <p class="section-lede" style="margin-bottom:28px">Tell us a little about your firm and your most expensive
-          operational problem. We'll follow up to schedule a walkthrough.</p>
-        <a href="mailto:hello@epheros.ai?subject=Private%20Invite%20Request" class="btn">Email hello@epheros.ai</a>
+  <section style="padding-top:56px">
+    <form id="invite-form" class="form-grid" onsubmit="return submitInvite(event)">
+      <label class="field">
+        Name
+        <input type="text" name="name" required>
+      </label>
+      <label class="field">
+        Work email
+        <input type="email" name="email" required>
+      </label>
+      <label class="field">
+        Firm name
+        <input type="text" name="firm" required>
+      </label>
+      <label class="field">
+        Portfolio / company size
+        <input type="text" name="size" placeholder="e.g. 12 portfolio companies, or 150 employees">
+      </label>
+      <label class="field full">
+        Current systems in use
+        <input type="text" name="systems" placeholder="ERP, CRM, financial tools...">
+      </label>
+      <label class="field full">
+        Your most expensive operational problem
+        <textarea name="problem" required></textarea>
+      </label>
+      <div class="full">
+        <button type="submit" class="btn">Submit Request</button>
       </div>
-      <div class="card" style="padding:36px">
-        <h3 style="margin-bottom:16px">What to include</h3>
-        <ul>
-          <li>Firm name and what you do</li>
-          <li>Portfolio size, or company size if not a fund</li>
-          <li>The most expensive operational problem you're facing today</li>
-          <li>Current systems in use (ERP, CRM, financial tools)</li>
-        </ul>
-      </div>
-    </div>
+    </form>
   </section>
 </div>
+
+<script>
+function submitInvite(e){
+  e.preventDefault();
+  var f = e.target;
+  var body = [
+    "Name: " + f.name.value,
+    "Email: " + f.email.value,
+    "Firm: " + f.firm.value,
+    "Portfolio / company size: " + f.size.value,
+    "Current systems: " + f.systems.value,
+    "",
+    "Most expensive operational problem:",
+    f.problem.value
+  ].join("\n");
+  var mailto = "mailto:hello@epheros.ai?subject=" + encodeURIComponent("Private Invite Request — " + f.firm.value)
+    + "&body=" + encodeURIComponent(body);
+  window.location.href = mailto;
+  return false;
+}
+</script>
 
 <footer>
   <div class="wrap inner">

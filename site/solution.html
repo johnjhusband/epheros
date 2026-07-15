@@ -12,8 +12,10 @@
 <body>
 
 <header class="nav">
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
   <div class="wrap inner">
     <a class="wordmark" href="/">EPHEROS</a>
+    <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
     <nav class="links">
       <a class="link" href="/">Home</a>
       <a class="link active" href="/solution">Solution</a>
@@ -29,8 +31,7 @@
   <div class="page-header">
     <div class="eyebrow">The Problem &amp; The Solution</div>
     <h1>Every business is drowning in data it can't use.</h1>
-    <p class="lede">Email, CRM, documents, meetings, financials — all disconnected, with no single source of truth.
-      The average portfolio company runs 7+ disconnected data systems and has no unified operational intelligence layer.</p>
+    <p class="lede">The average portfolio company runs 7+ disconnected data systems and has no unified operational intelligence layer.</p>
   </div>
 </div>
 
@@ -69,29 +70,94 @@
     <h2 class="section-title">One operating layer across your entire firm.</h2>
     <p class="section-lede">Epheros isn't software you buy and implement. It's an operating layer that sits across
       your entire firm and portfolio — ingesting, connecting, analyzing, and acting.</p>
-    <figure style="margin:0 0 56px;border:1px solid var(--line);background:var(--bg-elev)">
-      <img src="/assets/img/solution-diagram.png" alt="Epheros operating layer diagram connecting email, financial management, documents and CRM, and market signals to social intelligence, one-click actions, autonomous execution, and self-healing." style="width:100%;display:block">
-    </figure>
-    <div class="grid">
-      <div class="card">
-        <svg class="icon" viewBox="0 0 24 24"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z"/></svg>
-        <h3>One-click actions</h3>
-        <p>Every insight is paired with a next action, ready to execute.</p>
+    <div class="diagram">
+      <div class="hub">
+        <div class="hub-col">
+          <div class="hub-node">Email &amp; Calendar</div>
+          <div class="hub-node">Financial Management &amp; QoE</div>
+          <div class="hub-node">Documents &amp; CRM</div>
+          <div class="hub-node">Market Signals</div>
+        </div>
+        <div class="hub-core">
+          <span class="wordmark">EPHEROS</span>
+          <span>Agentic Business OS</span>
+        </div>
+        <div class="hub-col">
+          <div class="hub-node">Social Intelligence Engine</div>
+          <div class="hub-node">One-Click Auth &amp; Actions</div>
+          <div class="hub-node">Autonomous Execution</div>
+          <div class="hub-node">Self-Coding · Self-Healing</div>
+        </div>
       </div>
-      <div class="card">
-        <svg class="icon" viewBox="0 0 24 24"><path d="M4 12a8 8 0 0114-5.3M20 12a8 8 0 01-14 5.3"/><path d="M18 4v4h-4M6 20v-4h4"/></svg>
-        <h3>Autonomous execution</h3>
-        <p>Repetitive workflow execution without a ticket or a hand-off.</p>
+    </div>
+  </section>
+</div>
+
+<div class="wrap">
+  <section style="padding-top:40px">
+    <div class="feature-row">
+      <div class="feature-copy">
+        <div class="eyebrow">One-Click Actions</div>
+        <h3>Every insight arrives with a next step already attached.</h3>
+        <p>Epheros doesn't just tell you something's wrong — it hands you the fix, ready to execute in a single click, with role-aware permissions applied automatically.</p>
       </div>
-      <div class="card">
-        <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.4"/><circle cx="4.5" cy="6" r="1.6"/><circle cx="19.5" cy="6" r="1.6"/><circle cx="4.5" cy="18" r="1.6"/><circle cx="19.5" cy="18" r="1.6"/><path d="M6 7l4.5 3.5M18 7l-4.5 3.5M6 17l4.5-3.5M18 17l-4.5-3.5"/></svg>
-        <h3>Social intelligence</h3>
-        <p>Market, competitor, and talent signals delivered with context and a recommendation.</p>
+      <div class="feature-visual">
+        <svg viewBox="0 0 220 140" width="100%" style="max-width:280px">
+          <rect x="10" y="10" width="200" height="34" rx="3" fill="none" stroke="var(--line)"/>
+          <rect x="10" y="53" width="200" height="34" rx="3" fill="none" stroke="var(--line)"/>
+          <rect x="10" y="96" width="200" height="34" rx="3" fill="none" stroke="var(--gold)"/>
+          <circle cx="26" cy="27" r="4" fill="var(--gold)"/>
+          <circle cx="26" cy="70" r="4" fill="var(--muted)"/>
+          <circle cx="26" cy="113" r="4" fill="var(--gold)"/>
+          <rect x="160" y="103" width="40" height="20" rx="2" fill="var(--gold)"/>
+        </svg>
       </div>
-      <div class="card">
-        <svg class="icon" viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3.2"/></svg>
-        <h3>Self-improving</h3>
-        <p>The platform maintains and improves itself as it learns your business — self-coding, self-healing.</p>
+    </div>
+
+    <div class="feature-row reverse">
+      <div class="feature-copy">
+        <div class="eyebrow">Autonomous Execution</div>
+        <h3>Repetitive workflow, without a ticket or a hand-off.</h3>
+        <p>The tasks that used to sit in someone's inbox for days — status updates, formatting, routing — now run on their own, and only surface to a human when judgment is genuinely required.</p>
+      </div>
+      <div class="feature-visual">
+        <svg viewBox="0 0 200 140" width="100%" style="max-width:240px">
+          <circle cx="100" cy="70" r="52" fill="none" stroke="var(--line)"/>
+          <path d="M100 18a52 52 0 0144 26" fill="none" stroke="var(--gold)" stroke-width="2"/>
+          <circle cx="144" cy="44" r="4" fill="var(--gold)"/>
+          <circle cx="100" cy="70" r="8" fill="var(--gold)"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="feature-row">
+      <div class="feature-copy">
+        <div class="eyebrow">Social Intelligence</div>
+        <h3>Market, competitor, and talent signals — with context.</h3>
+        <p>Not a feed of raw alerts. Every signal ships with what happened, why it matters, and a recommended action.</p>
+      </div>
+      <div class="feature-visual">
+        <div class="signal-panel" style="width:100%">
+          <div class="signal-row"><div><div class="what">Competitor posting 12 new roles</div><div class="why">Growth signal</div></div><b>Flagged</b></div>
+          <div class="signal-row"><div><div class="what">Key employee checking job boards</div><div class="why">Flight risk</div></div><b>Flagged</b></div>
+          <div class="signal-row"><div><div class="what">Vendor alternative 23% cheaper</div><div class="why">Cost reduction</div></div><b>Action ready</b></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature-row reverse">
+      <div class="feature-copy">
+        <div class="eyebrow">Self-Improving</div>
+        <h3>The platform gets better at your business, not just at software.</h3>
+        <p>Every edit, click, and outcome trains Epheros. It raises its own autonomy level per task type as accuracy compounds — self-coding, self-healing.</p>
+      </div>
+      <div class="feature-visual">
+        <svg viewBox="0 0 200 100" width="100%" style="max-width:260px">
+          <polyline points="10,80 50,60 90,66 130,34 170,20" fill="none" stroke="var(--gold)" stroke-width="2.5"/>
+          <circle cx="10" cy="80" r="3.5" fill="var(--gold)"/><circle cx="50" cy="60" r="3.5" fill="var(--gold)"/>
+          <circle cx="90" cy="66" r="3.5" fill="var(--gold)"/><circle cx="130" cy="34" r="3.5" fill="var(--gold)"/>
+          <circle cx="170" cy="20" r="3.5" fill="var(--gold)"/>
+        </svg>
       </div>
     </div>
   </section>
@@ -104,9 +170,24 @@
     <p class="section-lede">Every employee device becomes part of a self-healing, decentralized compute mesh —
       while Epheros autonomously generates the exact digital tools, strategic intelligence, and pre-emptive
       workflows a company needs.</p>
-    <figure style="margin:0;border:1px solid var(--line);background:var(--bg-elev)">
-      <img src="/assets/img/tech-deck.png" alt="Four technology pillars: Autonomous Enterprise Mesh Intelligence, Pre-Cognitive Automation, Autonomous Software Genesis, Real-Time Strategy OS." style="width:100%;display:block">
-    </figure>
+    <div class="grid cols-2">
+      <div class="card">
+        <h3>Autonomous Enterprise Mesh Intelligence</h3>
+        <p>Dynamic tunnel-mesh protocols, idle-resource arbitration by business priority, and self-healing backup topology across decentralized endpoints.</p>
+      </div>
+      <div class="card">
+        <h3>Pre-Cognitive Automation</h3>
+        <p>Zero-latency intent prediction from operational metadata, strategic annotation layers, and one-click action propagation with role-aware permissions.</p>
+      </div>
+      <div class="card">
+        <h3>Autonomous Software Genesis</h3>
+        <p>Data-driven tool generation, a self-modifying architecture, and autonomous UI/UX adaptation by user and tenant.</p>
+      </div>
+      <div class="card">
+        <h3>Real-Time Strategy OS</h3>
+        <p>Market-and-organization fusion, operational metadata valuation, and dynamic risk/opportunity classification.</p>
+      </div>
+    </div>
   </section>
 </div>
 
@@ -116,9 +197,44 @@
     <h2 class="section-title">One platform. Every user sees exactly what they need.</h2>
     <p class="section-lede">From the CEO's portfolio health score to the CFO's daily P&amp;L validation, each
       role gets a dashboard built around what actually matters to their job.</p>
-    <figure style="margin:0;border:1px solid var(--line);background:var(--bg-elev)">
-      <img src="/assets/img/personas-deck.png" alt="Role-based dashboards for CEO/Managing Partner, CFO/Finance, VP Sales/BD, and HR/Talent." style="width:100%;display:block">
-    </figure>
+    <div class="grid">
+      <div class="card">
+        <h3>CEO / Managing Partner</h3>
+        <ul>
+          <li>Market position vs. competitors</li>
+          <li>Capital deployment velocity</li>
+          <li>Portfolio health scores</li>
+          <li>Deal flow pipeline with AI scoring</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>CFO / Finance</h3>
+        <ul>
+          <li>Daily P&amp;L validation to the penny</li>
+          <li>Quality of Earnings in real time</li>
+          <li>Vendor cost benchmarking</li>
+          <li>Cash runway and covenant alerts</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>VP Sales / BD</h3>
+        <ul>
+          <li>Live buyer intent signals</li>
+          <li>AI-drafted outreach, ready to send</li>
+          <li>Contact dossiers with intro paths</li>
+          <li>Deal velocity tracking</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>HR / Talent</h3>
+        <ul>
+          <li>Key employee flight-risk signals</li>
+          <li>Glassdoor &amp; LinkedIn sentiment</li>
+          <li>Hiring avatar from top performers</li>
+          <li>Compensation benchmarking</li>
+        </ul>
+      </div>
+    </div>
   </section>
 </div>
 

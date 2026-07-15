@@ -13,8 +13,10 @@
 <body>
 
 <header class="nav">
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
   <div class="wrap inner">
     <a class="wordmark" href="/">EPHEROS</a>
+    <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
     <nav class="links">
       <a class="link active" href="/">Home</a>
       <a class="link" href="/solution">Solution</a>
@@ -28,6 +30,7 @@
 
 <div class="wrap">
   <section class="hero">
+    <div class="hero-glow"></div>
     <div class="pill"><span class="dot"></span>Now onboarding a limited beta</div>
     <h1 class="display">Stop paying people to move data between systems.</h1>
     <p class="lede">Epheros connects your email, documents, financials, and market signals into one
@@ -37,9 +40,26 @@
       <a class="btn ghost" href="/how-it-works">See how it works</a>
     </div>
 
-    <figure style="margin:0;border:1px solid var(--line);background:var(--bg-elev)">
-      <img src="/assets/img/solution-diagram.png" alt="Diagram: Epheros as a central operating layer connecting email &amp; calendar, financial management, documents &amp; CRM, and market signals to social intelligence, one-click actions, autonomous execution, and self-healing." style="width:100%;display:block">
-    </figure>
+    <div class="diagram">
+      <div class="hub">
+        <div class="hub-col">
+          <div class="hub-node">Email &amp; Calendar</div>
+          <div class="hub-node">Financial Management &amp; QoE</div>
+          <div class="hub-node">Documents &amp; CRM</div>
+          <div class="hub-node">Market Signals</div>
+        </div>
+        <div class="hub-core">
+          <span class="wordmark">EPHEROS</span>
+          <span>Agentic Business OS</span>
+        </div>
+        <div class="hub-col">
+          <div class="hub-node">Social Intelligence Engine</div>
+          <div class="hub-node">One-Click Auth &amp; Actions</div>
+          <div class="hub-node">Autonomous Execution</div>
+          <div class="hub-node">Self-Coding · Self-Healing</div>
+        </div>
+      </div>
+    </div>
   </section>
 </div>
 

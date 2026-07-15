@@ -12,8 +12,10 @@
 <body>
 
 <header class="nav">
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
   <div class="wrap inner">
     <a class="wordmark" href="/">EPHEROS</a>
+    <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
     <nav class="links">
       <a class="link" href="/">Home</a>
       <a class="link" href="/solution">Solution</a>
@@ -37,7 +39,7 @@
   <section>
     <div class="grid cols-2">
       <div class="card">
-        <svg class="icon-lg" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M7 13l3-3 3 2 4-5"/></svg>
+        <svg class="icon-lg" viewBox="0 0 24 24"><rect x="4" y="3" width="12" height="16" rx="1"/><path d="M8 8h4M8 12h4"/><circle cx="16.5" cy="16.5" r="3.2"/><path d="M19 19l2.5 2.5"/></svg>
         <h3>Underwriting intelligence</h3>
         <p>Upload a CIM. Epheros extracts financials, identifies risks, maps customer concentration, and builds the four-scenario model — Quality of Earnings in hours, not weeks.</p>
       </div>
@@ -52,7 +54,7 @@
         <p>100-day plan execution tracked to the hour. Milestone alerts before they're missed. EBITDA improvement attributed to specific actions.</p>
       </div>
       <div class="card">
-        <svg class="icon-lg" viewBox="0 0 24 24"><path d="M12 3l7 4v5c0 5-3.5 7.5-7 9-3.5-1.5-7-4-7-9V7l7-4z"/></svg>
+        <svg class="icon-lg" viewBox="0 0 24 24"><path d="M14 4h5v16h-5M9 8l-5 4 5 4M4 12h11"/></svg>
         <h3>Exit readiness</h3>
         <p>Continuous QoE monitoring. A clean data room built automatically. Management presentation drafted straight from live operational data.</p>
       </div>
@@ -74,9 +76,14 @@
   <section style="padding-top:0">
     <div class="eyebrow">Use Cases</div>
     <h2 class="section-title">Where Epheros plugs in across the portfolio company.</h2>
-    <figure style="margin:0;border:1px solid var(--line);background:var(--bg-elev)">
-      <img src="/assets/img/usecases-deck.png" alt="Use cases for portfolio companies: underwriting valuation, auditing financials and risk, EBITDA growth management, workflow and project management, integrations management, IT department replacement, data and document management, financial modeling." style="width:100%;display:block">
-    </figure>
+    <div class="grid cols-2">
+      <div class="card"><h3>Underwriting valuation</h3><p>Buy-side and sell-side, from first look to final model.</p></div>
+      <div class="card"><h3>Financial &amp; risk audits</h3><p>Financials, data, security, and gap analysis in one pass.</p></div>
+      <div class="card"><h3>EBITDA growth management</h3><p>Tracked to the action that drove it, not just the outcome.</p></div>
+      <div class="card"><h3>Workflow &amp; project management</h3><p>Cross-functional execution without a PMO.</p></div>
+      <div class="card"><h3>Integrations management</h3><p>One layer across every system a portfolio company already runs.</p></div>
+      <div class="card"><h3>Financial modeling</h3><p>LP positions, equity rollover, and scenario modeling on demand.</p></div>
+    </div>
   </section>
 </div>
 
@@ -84,20 +91,15 @@
   <section style="padding-top:0">
     <div class="eyebrow">Social Intelligence Engine</div>
     <h2 class="section-title">Market signals, delivered with strategy and a send button.</h2>
-    <p class="section-lede">SIG watches LinkedIn, Reddit, X, news feeds, SEC filings, Glassdoor, job boards, public records, and Google signals — continuously. Every signal includes what happened, why it matters, a recommended action, and one-click execution.</p>
-    <figure style="margin:0;border:1px solid var(--line);background:var(--bg-elev)">
-      <img src="/assets/img/signals-deck.png" alt="Example signals: competitor posting new roles as a growth signal, key employee checking job boards as a flight risk, executive departure as an opportunity, target company raising debt as an acquisition window, lookalike client buy intent, cheaper vendor alternative." style="width:100%;display:block">
-    </figure>
-  </section>
-</div>
-
-<div class="wrap">
-  <section style="padding-top:0">
-    <blockquote class="quote">
-      "Tell us your most expensive problem. We'll prove the cost down to the minute, then show you exactly
-      where we can reduce it — and if we can't prove a measurable improvement in 30 days, you pay nothing.
-      Keep the audit."
-    </blockquote>
+    <p class="section-lede">SIG watches LinkedIn, Reddit, X, news feeds, SEC filings, Glassdoor, job boards, public records, and Google signals — continuously. Every signal includes what happened, why it matters, and a recommended action.</p>
+    <div class="signal-panel">
+      <div class="signal-row"><div><div class="what">Competitor posting 12 new roles</div><div class="why">Growth signal</div></div><b>Flagged</b></div>
+      <div class="signal-row"><div><div class="what">Key employee checking job boards</div><div class="why">Flight risk</div></div><b>Flagged</b></div>
+      <div class="signal-row"><div><div class="what">Executive departure at competitor</div><div class="why">Opportunity</div></div><b>Flagged</b></div>
+      <div class="signal-row"><div><div class="what">Target company raising debt</div><div class="why">Acquisition window</div></div><b>Flagged</b></div>
+      <div class="signal-row"><div><div class="what">Lookalike client showing buy intent</div><div class="why">Outreach ready</div></div><b>Action ready</b></div>
+      <div class="signal-row"><div><div class="what">Vendor alternative 23% cheaper</div><div class="why">Cost reduction</div></div><b>Action ready</b></div>
+    </div>
   </section>
 </div>
 
