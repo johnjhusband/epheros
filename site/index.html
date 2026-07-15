@@ -4,157 +4,24 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Epheros — The Agentic Business Operating System</title>
-<meta name="description" content="Epheros connects your email, documents, financials, and market signals into one living intelligence layer that acts on your behalf — with zero upfront cost.">
+<meta name="description" content="Epheros connects your email, documents, financials, and market signals into one living intelligence layer that acts on your behalf.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Archivo:wght@700;800;900&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --bg:#0e0d0d;
-    --bg-elev:#141312;
-    --card:#161514;
-    --fg:#f2efe9;
-    --muted:#9c968d;
-    --line:#2a2723;
-    --gold:#c9a06e;
-    --gold-soft:#b98f5c;
-    --gold-dim:rgba(201,160,110,0.28);
-    --radius:4px;
-  }
-  @media (prefers-color-scheme: light){
-    :root{
-      --bg:#f7f5f1; --bg-elev:#ffffff; --card:#ffffff; --fg:#1a1815; --muted:#6b6459;
-      --line:#e7e1d8; --gold:#a97a3f; --gold-soft:#8f6531; --gold-dim:rgba(169,122,63,0.22);
-    }
-  }
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{
-    margin:0;background:var(--bg);color:var(--fg);
-    font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-    line-height:1.6;-webkit-font-smoothing:antialiased;font-weight:400;
-  }
-  h1,h2,h3{font-family:"Archivo","Inter",sans-serif;letter-spacing:-0.01em;font-weight:800}
-  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
-  a{color:inherit}
-  hr.rule{border:none;border-top:1px solid var(--gold-dim);margin:0}
-
-  .wordmark{
-    font-family:"Inter";font-weight:300;font-size:1.3rem;letter-spacing:0.32em;
-    color:var(--gold);display:inline-block;
-  }
-  .wordmark small{
-    display:block;font-size:0.62rem;letter-spacing:0.28em;color:var(--muted);
-    font-weight:500;margin-top:4px;
-  }
-
-  header.nav{
-    position:sticky;top:0;z-index:20;
-    backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
-    background:color-mix(in srgb, var(--bg) 82%, transparent);
-    border-bottom:1px solid var(--line);
-  }
-  header.nav .inner{display:flex;align-items:center;justify-content:space-between;padding:20px 0}
-  nav.links{display:flex;align-items:center;gap:32px}
-  nav.links a.link{color:var(--muted);text-decoration:none;font-size:0.88rem;font-weight:500;letter-spacing:0.02em}
-  nav.links a.link:hover{color:var(--fg)}
-
-  .btn{
-    display:inline-flex;align-items:center;gap:8px;
-    background:var(--gold);color:#141312;
-    padding:12px 26px;border-radius:2px;font-weight:700;
-    text-decoration:none;font-size:0.85rem;letter-spacing:0.03em;
-    border:1px solid var(--gold);cursor:pointer;text-transform:uppercase;
-  }
-  .btn.ghost{background:transparent;color:var(--fg);border:1px solid var(--line)}
-  .btn.ghost:hover{border-color:var(--gold-dim)}
-
-  section{padding:130px 0}
-  section.hero{padding:120px 0 100px}
-  .pill{
-    display:inline-flex;align-items:center;gap:9px;padding:8px 18px;
-    border:1px solid var(--gold-dim);color:var(--gold);
-    font-size:0.72rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:36px;
-  }
-  .pill .dot{width:5px;height:5px;background:var(--gold)}
-
-  h1.display{
-    font-size:clamp(2.4rem,5.6vw,4.1rem);line-height:1.08;
-    margin:0 0 28px;max-width:880px;
-  }
-  p.lede{color:var(--muted);font-size:1.2rem;max-width:600px;margin:0 0 44px;font-weight:400}
-  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:96px}
-
-  .panel{
-    border:1px solid var(--line);background:var(--bg-elev);
-  }
-  .panel .bar{display:flex;align-items:center;gap:8px;padding:14px 20px;border-bottom:1px solid var(--line)}
-  .panel .bar span{width:8px;height:8px;border:1px solid var(--line)}
-  .panel-body{padding:32px;display:grid;grid-template-columns:1.1fr 1fr;gap:1px;background:var(--line)}
-  @media (max-width:720px){.panel-body{grid-template-columns:1fr}}
-  .panel-card{background:var(--bg-elev);padding:26px}
-  .panel-card .label{color:var(--gold);font-size:0.72rem;text-transform:uppercase;letter-spacing:0.12em;margin-bottom:18px;font-weight:700}
-  .bar-chart{display:flex;align-items:flex-end;gap:7px;height:80px}
-  .bar-chart i{flex:1;background:var(--gold);opacity:0.85}
-  .signal-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--line);font-size:0.88rem;color:var(--muted)}
-  .signal-row:last-child{border:none}
-  .signal-row b{color:var(--gold);font-weight:700}
-
-  .eyebrow{
-    color:var(--gold);font-weight:700;font-size:0.75rem;letter-spacing:0.16em;
-    text-transform:uppercase;margin-bottom:18px;
-  }
-  h2.section-title{font-size:clamp(1.7rem,3vw,2.3rem);margin:0 0 16px;max-width:680px;line-height:1.18}
-  p.section-lede{color:var(--muted);font-size:1.05rem;max-width:600px;margin:0 0 56px}
-
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
-  .card{background:var(--card);padding:30px}
-  .card h3{margin:0 0 10px;font-size:1.02rem;font-weight:700;font-family:"Inter"}
-  .card p{margin:0;color:var(--muted);font-size:0.92rem}
-
-  .steps3{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
-  @media (max-width:860px){.steps3{grid-template-columns:1fr}}
-  .step3{background:var(--card);padding:34px;border-top:2px solid var(--gold)}
-  .step3 .n{color:var(--gold);font-family:"Archivo";font-weight:900;font-size:1.6rem;margin-bottom:18px;display:block}
-  .step3 h3{font-size:1.1rem;margin:0 0 12px;font-weight:700;font-family:"Inter"}
-  .step3 p{color:var(--muted);margin:0;font-size:0.93rem}
-
-  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1px;
-    border:1px solid var(--line);background:var(--line)}
-  .stat{background:var(--card);padding:32px;text-align:left}
-  .stat b{display:block;font-size:2.2rem;font-weight:900;color:var(--gold);font-family:"Archivo"}
-  .stat span{color:var(--muted);font-size:0.86rem}
-  .cite{color:var(--muted);font-size:0.78rem;margin-top:24px;display:block;font-style:italic}
-
-  .pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
-  .price-card{background:var(--card);padding:36px;border-top:2px solid var(--line)}
-  .price-card.featured{border-top:2px solid var(--gold)}
-  .price-card h3{margin:0 0 6px;font-size:1.15rem;font-family:"Inter"}
-  .price-card .tag{color:var(--gold);font-size:0.78rem;margin-bottom:20px;display:block;letter-spacing:0.08em;text-transform:uppercase;font-weight:700}
-  .price-card p{color:var(--muted);font-size:0.93rem;margin:0}
-
-  .cta-band{
-    text-align:left;border:1px solid var(--line);padding:64px;background:var(--bg-elev);
-    display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;
-  }
-  .cta-band h2{font-size:clamp(1.6rem,3vw,2.1rem);margin:0 0 12px}
-  .cta-band p{color:var(--muted);margin:0;font-size:1rem;max-width:440px}
-
-  footer{border-top:1px solid var(--line);padding:44px 0;color:var(--muted);font-size:0.85rem;
-    display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
-  footer .wordmark{font-size:0.95rem}
-</style>
+<link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
 
 <header class="nav">
   <div class="wrap inner">
-    <span class="wordmark">EPHEROS</span>
+    <a class="wordmark" href="/">EPHEROS</a>
     <nav class="links">
-      <a class="link" href="#solution">Solution</a>
-      <a class="link" href="#how-it-works">How it works</a>
-      <a class="link" href="#pricing">Pricing</a>
-      <a class="btn" href="#invite">Request Invite</a>
+      <a class="link active" href="/">Home</a>
+      <a class="link" href="/solution">Solution</a>
+      <a class="link" href="/how-it-works">How it works</a>
+      <a class="link" href="/for-private-equity">For Private Equity</a>
+      <a class="link" href="/pricing">Pricing</a>
+      <a class="btn" href="/invite">Request Invite</a>
     </nav>
   </div>
 </header>
@@ -165,80 +32,42 @@
     <h1 class="display">Stop paying people to move data between systems.</h1>
     <p class="lede">Epheros connects your email, documents, financials, and market signals into one
       operating layer that ingests, analyzes, and acts on your behalf — for zero upfront cost.</p>
-    <div class="hero-ctas">
-      <a class="btn" href="#invite">Request a Private Invite</a>
-      <a class="btn ghost" href="#how-it-works">See how it works</a>
+    <div class="hero-ctas" style="margin-bottom:64px">
+      <a class="btn" href="/invite">Request a Private Invite</a>
+      <a class="btn ghost" href="/how-it-works">See how it works</a>
     </div>
 
-    <div class="panel">
-      <div class="bar"><span></span><span></span><span></span></div>
-      <div class="panel-body">
-        <div class="panel-card">
-          <div class="label">Operational health</div>
-          <div class="bar-chart">
-            <i style="height:38%"></i><i style="height:62%"></i><i style="height:48%"></i>
-            <i style="height:80%"></i><i style="height:66%"></i><i style="height:92%"></i>
-            <i style="height:74%"></i>
-          </div>
-        </div>
-        <div class="panel-card">
-          <div class="label">Live signals</div>
-          <div class="signal-row"><span>Vendor cost variance</span><b>flagged</b></div>
-          <div class="signal-row"><span>Deal velocity, this week</span><b>+18%</b></div>
-          <div class="signal-row"><span>Report generated</span><b>auto</b></div>
-        </div>
+    <figure style="margin:0;border:1px solid var(--line);background:var(--bg-elev)">
+      <img src="/assets/img/solution-diagram.png" alt="Diagram: Epheros as a central operating layer connecting email &amp; calendar, financial management, documents &amp; CRM, and market signals to social intelligence, one-click actions, autonomous execution, and self-healing." style="width:100%;display:block">
+    </figure>
+  </section>
+</div>
+
+<div class="wrap">
+  <section id="why-now">
+    <div class="eyebrow">Why Now</div>
+    <h2 class="section-title">Three irreversible forces have created a once-per-decade window.</h2>
+    <p class="section-lede">Epheros isn't merely well-timed — it's only possible now, at the exact intersection of model maturity, hardware ubiquity, and executive frustration with SaaS sprawl.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Open-source LLMs at GPT-4 parity</h3>
+        <p>For the first time it's possible to build a fully proprietary, self-hosted cognitive engine without API dependency or data leakage.</p>
+      </div>
+      <div class="card">
+        <h3>Enterprise GPU saturation</h3>
+        <p>Remote work and AI adoption have left the average mid-market company with $40K&ndash;$200K in idle GPU capacity — a zero-cost compute mesh that didn't exist three years ago.</p>
+      </div>
+      <div class="card">
+        <h3>Open revolt against SaaS sprawl</h3>
+        <p>Software spend per employee is up 312% since 2019 while productivity gains have flatlined. CIOs and CFOs are actively looking for a way out.</p>
       </div>
     </div>
   </section>
 </div>
 
 <div class="wrap">
-  <section id="problem">
-    <div class="eyebrow">The Problem</div>
-    <h2 class="section-title">Every business is drowning in data it can't use.</h2>
-    <p class="section-lede">Email, CRM, documents, meetings, financials — all disconnected, with no single
-      source of truth. Executives wait days for reports that are already outdated on arrival.</p>
-    <div class="grid">
-      <div class="card"><h3>Data silos</h3><p>Disconnected systems, no unified view — even with an ERP in place, data stays siloed and out of reach.</p></div>
-      <div class="card"><h3>Slow decisions</h3><p>Reports take days to produce and are stale the moment they land.</p></div>
-      <div class="card"><h3>Invisible leakage</h3><p>Vendor overcharges, missed signals, and lost deals go unnoticed until it's too late.</p></div>
-      <div class="card"><h3>Manual everything</h3><p>High-value people spend their time on copy-paste, status updates, and formatting.</p></div>
-    </div>
-  </section>
-</div>
-
-<div class="wrap">
-  <section id="solution">
-    <div class="eyebrow">The Solution</div>
-    <h2 class="section-title">One operating layer across your entire firm.</h2>
-    <p class="section-lede">Epheros isn't another point solution. It sits across email &amp; calendar,
-      financial management, documents &amp; CRM, and market signals — ingesting, connecting, analyzing,
-      and acting on your behalf.</p>
-    <div class="grid">
-      <div class="card"><h3>One-click actions</h3><p>Every insight is paired with a next action, ready to execute.</p></div>
-      <div class="card"><h3>Autonomous execution</h3><p>Repetitive workflow execution without a ticket or a hand-off.</p></div>
-      <div class="card"><h3>Market intelligence</h3><p>Competitor, vendor, and talent signals delivered with context and a recommendation.</p></div>
-      <div class="card"><h3>Self-improving</h3><p>The platform maintains and improves itself as it learns your business.</p></div>
-    </div>
-  </section>
-</div>
-
-<div class="wrap">
-  <section id="how-it-works">
-    <div class="eyebrow">How It Works</div>
-    <h2 class="section-title">Zero-friction setup. Learns your business in hours.</h2>
-    <p class="section-lede">No IT ticket, no months-long rollout — three phases, running in the background from day one.</p>
-    <div class="steps3">
-      <div class="step3"><span class="n">01</span><h3>Connect</h3><p>Open a private invite, create a password, and grant one-click consent. Epheros ingests email, documents, and connected drives automatically.</p></div>
-      <div class="step3"><span class="n">02</span><h3>Understand</h3><p>Epheros maps your workflow, builds a role-aware profile, and surfaces the fixes that deliver the most value fastest.</p></div>
-      <div class="step3"><span class="n">03</span><h3>Act</h3><p>A live, personalized dashboard appears within hours. Every insight is validated, verified, and one click from action.</p></div>
-    </div>
-  </section>
-</div>
-
-<div class="wrap">
-  <section id="evidence">
-    <div class="eyebrow">Why Now</div>
+  <section id="evidence" style="padding-top:0">
+    <div class="eyebrow">The Evidence</div>
     <h2 class="section-title">What the data says about businesses that operate like this.</h2>
     <div class="stats">
       <div class="stat"><b>23%</b><span>Avg. EBITDA improvement in first 12 months of AI-assisted ops</span></div>
@@ -251,44 +80,30 @@
 </div>
 
 <div class="wrap">
-  <section id="pricing">
-    <div class="eyebrow">Pricing Philosophy</div>
-    <h2 class="section-title">Performance-based. You only pay for results above where you are today.</h2>
-    <p class="section-lede">Tell us your most expensive problem. We'll show you exactly where we can reduce
-      it — and if we can't prove a measurable improvement within 30 days, you pay nothing.</p>
-    <div class="pricing-grid">
-      <div class="price-card">
-        <h3>Audit</h3>
-        <span class="tag">One-time</span>
-        <p>A full operational and financial audit with a prioritized action plan. Zero cost implementation, zero risk.</p>
-      </div>
-      <div class="price-card featured">
-        <h3>Growth</h3>
-        <span class="tag">Annual · performance-based</span>
-        <p>Full deployment across every user and integration, priced as a share of the cost savings and revenue growth we actually deliver. No delta, no charge.</p>
-      </div>
-    </div>
-  </section>
-</div>
-
-<div class="wrap">
-  <section id="invite">
+  <section id="invite" style="padding-top:0">
     <div class="cta-band">
       <div>
         <h2>Request a Private Invite</h2>
         <p>We're selectively onboarding a small number of companies. Applications are reviewed by invitation only.</p>
       </div>
-      <a href="mailto:hello@epheros.ai" class="btn">Get in touch</a>
+      <a href="/invite" class="btn">Get Started</a>
     </div>
   </section>
 </div>
 
-<div class="wrap">
-  <footer>
-    <span class="wordmark">EPHEROS</span>
-    <span>&copy; 2026 Epheros. All rights reserved. &nbsp;·&nbsp; hello@epheros.ai</span>
-  </footer>
-</div>
+<footer>
+  <div class="wrap inner">
+    <a class="wordmark" href="/">EPHEROS</a>
+    <nav>
+      <a href="/solution">Solution</a>
+      <a href="/how-it-works">How it works</a>
+      <a href="/for-private-equity">For Private Equity</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/invite">Request Invite</a>
+      <a href="mailto:hello@epheros.ai">hello@epheros.ai</a>
+    </nav>
+  </div>
+</footer>
 
 </body>
 </html>
