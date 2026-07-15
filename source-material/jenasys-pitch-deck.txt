@@ -1,0 +1,550 @@
+--- Slide 1 ---
+AGENTIC BUSINESS OPERATING SYSTEM
+The World’s First OaaS Operating System Truly Aligned with its Clients’ Success
+$0 Budget Friction | Zero Risk operational playbook asset for post-merger integrations
+Private Equity
+ Portfolio Operations
+ MSP & IT Services
+ Enterprise
+CONFIDENTIAL — PREPARED FOR QUALIFIED INVESTORS
+
+--- Slide 2 ---
+THE PROBLEM
+“We will clear your portfolio's IT overhead, 
+automate your entire pipeline, and add 
+$3.6M to each asset's EBITDA. We charge 
+zero upfront implementation fees, and we 
+only invoice monthly based on realized 
+expense drops and top-line growth." 
+The Inevitable Lock-In | Because JenaSys self-updates and writes its own code, it behaves like an organic infrastructure layer. 
+The cost and friction of migrating away from JenaSys to rebuild a human IT department becomes a massive operational deterrent. 
+- The Catch: This is a one-time only, private invite to say yes. 
+$0 cost implementation < 7 days
+
+--- Slide 3 ---
+THE PROBLEM
+Every business is drowning
+in data it cannot use.
+⟰  Data Silos
+Email, CRM, docs, meetings, ﬁnancials. All disconnected. No single source of 
+truth. Even with ERP’s the data is siloed in the past and just out of reach.
+⏱
+  Slow Decisions
+Executives wait days for reports that are already outdated when delivered.
+↨↨↬  Invisible Leakage
+Vendor overcharges, missed signals, wrong hires, lost deals… All invisible until 
+too late.
+⟲  Manual Everything
+High-value people doing low-value work. Copy-paste. Status updates. Report 
+formatting. Data processing. Handling tickets. Typed communications.
+The average PE portfolio company has 7+ disconnected data systems and no uniﬁed operational intelligence layer.
+
+--- Slide 4 ---
+THE SOLUTION
+The Operating System your business has 
+been running without.
+Agentic Business OS
+Email & Calendar
+Financial Management & QoE
+Documents & CRM
+Market Signals
+Social Intelligence Engine
+One-Click Auth & Actions
+Autonomous Execution
+Self Coding - Self Healing
+JenaSys is not software. She’s an operating layer that sits across your entire ﬁrm and portfolio… ingesting, connecting, analyzing, and acting.
+
+--- Slide 5 ---
+From System of Record to System of Execution
+Status Quo vs. Outcome as a Service
+Status Quo
+ERPs Lack True Intelligence
+Pay upfront for a long implementations, hit budget overruns, 
+face user resistance, use consultants, change management 
+issues, wrapped up in a multi-year contracts with incomplete 
+adoption
+SaaS is Fragmented
+Your CRM contains customers. Accounting contains 
+ﬁnancials. Slack contains conversations. Email contains 
+decisions. Employees contain knowledge. Documents 
+contain processes. Even with APIs, data gets over processed
+The Old Way of Doing Things
+Buy software that is stuck at the company level instead of at 
+the platform level, it records work. Hire consultants. Spend 
+forever implementing. Train everyone. Hope it works. Only 
+see the history of what happened. This creates the sunk cost 
+fallacy that keeps companies stuck.
+Outcome as a Service
+JenaSys Connects
+People, knowledge, systems, processes, relationships, 
+decisions, and opportunities all into a living business model, 
+adding operational and strategic intelligence alongside 
+real-time data, one-click actions, turning ownership of the 
+knowledge and strategy to your ﬁrm.
+JenaSys Understands
+Contacts are inventory. Organization creates speed. Follow 
+up multiplies deals. Good data increases accuracy. 
+Simpliﬁcation ampliﬁes action. Efficiency reduces friction. 
+Centralization facilitates intelligence-based decisions. 
+Automation increases focus. Live data paired with strategic 
+actions, ﬁnding & closing gaps beyond the system.
+People are the Integration Layer
+Connect your business. Learn how it operates. Improve 
+performance immediately. Pay only from the value created.
+The World’s First Operating System Aligned with its Clients 
+developed as an Outcome as a Service
+
+--- Slide 6 ---
+THE SOLUTION
+Artiﬁcial Intelligence - What’s Coming?
+Agentic Business OS
+Artiﬁcial General Intelligence
+Decentralized Networks
+Augmented Intelligence
+Advanced Robotics & IOT
+Human Machine Integration
+Self-Deciding Artiﬁcial Intelligence
+Quantum Computing
+Learning & Improvement
+The reason it’s important to know what’s coming is to understand what it means when a tool is able to maintain its own relevance at the speed of Ai.
+
+--- Slide 7 ---
+WHY NOW
+3 Irreversible forces have 
+created a once-per-decade 
+window
+⟰  Open Source LLMs Have Reached GPT-4 parity
+This makes it possible for the ﬁrst time to build a fully proprietary, self-hosted 
+cognitive engine without API dependency or data leakage.
+⏱
+  Enterprise GPU Saturation
+Driven by remote work and AI adoption, the average mid-market company now 
+has $40k-$200k in idle GPU capacity sitting on desks and laptops, creating a 
+zero-cost compute mesh that did not exist 3 years ago.
+↨↨↬  CIOs & CFOs In Open Revolt Against SaaS Sprawl
+Software spend per employee has risen 312% since 2019 while productivity gains 
+have ﬂatlined.
+⟲  JenaSys is not merely well-timed…
+It is only possible now, at this exact intersection of model maturity, hardware 
+ubiquity, and executive desperation.
+The average PE portfolio company has 7+ disconnected data systems and no uniﬁed operational intelligence layer.
+
+--- Slide 8 ---
+IT’S NOT A VIBE CODED AI WRAPPER. DIVING BELOW THE SURFACE.
+Transforming every employee device into a self-healing, decentralized supercomputer while autonomously generating 
+the exact digital tools, strategic intelligence, and preemptive workﬂows a company needs; eliminating departments, 
+dumb servers, and replacing static software with a living, self-evolving, enterprise organism. 
+Autonomous Enterprise Mesh 
+Intelligence (AMEI) 
+Pre-Cognitive Automation
+Autonomous Software Genesis
+Real-Time Strategy OS
+CONFIDENTIAL — PREPARED FOR QUALIFIED INVESTORS
+Dynamic tunnel mesh protocols, idle-resource arbitration by business priority, and self-healing backup topology across decentralized endpoints.
+Zero-latency intent prediction from operational metadata, strategic annotation layers, and one-click action propagation with role-aware permissions.
+Data-driven tool ontogenesis, self-modifying kernel architecture, and autonomous UI/UX adaptation by user and tenant classiﬁcation.
+Market-organization ontological fusion, operational metadata valuation underwriting and dynamic entity classiﬁcation with risk/opportunity propagation.
+These aren’t features, beneﬁts or functions… Four uncontested blue oceans with patent ﬁlings in progress. They are part of the IP Portfolio.
+No competitor has ﬁled in the intersection of distributed desktop mesh + business-priority arbitration + autonomous code generation + live strategic underwriting.
+
+--- Slide 9 ---
+THE BUSINESS CASE
+The Global Fragmented Enterprise Software Market
+$487B
+COMBINED TAM
+Enterprise SaaS + Cloud + IT Services + Business Intelligence
+$575B in Mid-Market PE Revenue. $69B in EBITDA. $13.8B of EBITDA 
+On Legacy Systems. $8.33B in Improvable EBITDA
+$1.18B
+5 YEAR SOM
+0.02% TAM Capture @ $50K - $2M ACV
+$243M
+ARR @ 24 PE Clients | 460 Portfolio Companies Year 1
+82% Gross Margin
+Acquiring 125 PE Clients | 2400 Portfolio Companies over 5 years  
+$3.62M
+AVERAGE EBITDA LIFT
+For mid-market portfolio company on legacy systems with average 
+EBITDA of $6M could see this lift, easily.
+$506k
+With Average Expected EBITDA Improvement of $3.62M on 
+Mid-market $50M PE Backed Portfolio Companies.  Charging OaaS at 
+14% delta of the EBITDA lift, the average portfolio company will yield 
+$506k per year, and average PE Firm with 20 companies will yield 
+$10M
+20x-50x
+Proﬁtable AI companies are currently trading in the range of 20x to 
+50x EBITDA. Proprietary moats like our IP, and our MRR, NRR, and 
+ARR from the value and stickiness of the product make it a winner.
+
+--- Slide 10 ---
+THE BUSINESS CASE
+Baseline Financial Proﬁle & TCO Comparison
+Traditional ERP
+Upfront / Implementation: $500,000-$1,500,000
+Annual Licensing: $100,000-$250,000
+Time-to-Value (Go-Live): 9-18 months
+Year 1 Total Cost: $1,000,000
+OaaS/Ai BOS
+Upfront / Implementation: $50,000-$150,000 (OpEx)
+Annual Licensing: $120,000 ($40/user/mo equivalent)
+Time-to-Value (Go Live) 30-90 days
+Year 1 Total Cost: $220,000
+$
+A
+Jena Expands
+Mid-Market Base EBITDA: $6,000,000 (12%)
+Operational Savings: 3% ($1.5M Lower Costs - COGS/SG&A)
+Top-Line Growth Enablement: 1% ($500k Revenue x 12% = $60k)
+NET EBITDA EXPANSION: $1,560,000
+VALUE IMPACT at 10x EV/EBITDA Multiple: $15,600,000
+Market Penetration
+M12: 1% - Beachhead Validation
+M24: 3.5% - Expansion Accelerate
+M36: 7.5% - Inﬂection Point (PE)
+M48: 13% - Scale Phase (Platform)
+M60: 20% - Maturity (Dominance)
+Pricing
+Tied Directly to Measurable Revenue Acceleration & Proﬁt Margin 
+Expansion Delivered by the Platform, with Target ACV if $50K-$2M 
+based on company size and complexity. Gross margins exceed 80% 
+at scale because the platform runs on client-owned hardware & a 
+proprietary open-source LLM w/No Per-Token API Costs or Cloud 
+Compute markup
+
+--- Slide 11 ---
+HOW IT WORKS — PHASE 1
+Zero-friction setup.
+Jena learns you in hours, not months.
+01
+Browser Install
+User opens private invite URL. Creates password. Accepts 
+2MB desktop bridge download. No IT ticket required.
+02
+Automatic Ingestion
+Jena scans devices, reads email (one click consent), ingests 
+documents, SharePoint, Dropbox, Box, browser data…etc.
+She also creates encrypted tunnels on each device as a mesh 
+network to balance GPU and storage, company side.
+03
+Avatar Construction
+Builds user proﬁle: role, workﬂow, tools, communication 
+style, relationships, permissions, and access levels.
+04
+Gap Detection
+Maps current workﬂow, identiﬁes inefficiencies using Lean 
+and Six Sigma principles.  She then looks at the gaps 
+between company vs. marketplace best of breed, user vs. 
+best of breed, and 2nd degree relationships for signals to 
+maximize value. Surfaces the 20% ﬁxes that deliver 80% of 
+gains.
+05
+Live Dashboard
+Personalized, role-aware dashboard appears within hours. 
+Every insight is validated, veriﬁed, and actionable.
+06
+Continuous Learning
+Every edit, click, and outcome trains Jena. She improves 
+autonomy level per task type as accuracy compounds.
+
+--- Slide 12 ---
+PERSONALIZED INTELLIGENCE
+One platform. Every user sees
+exactly what they need.
+CEO / Managing Partner
+Market position vs. competitors
+Capital deployment velocity
+Portfolio health scores
+Strategic gaps and opportunities
+Deal ﬂow pipeline with AI scoring
+CFO / Finance
+Daily P&L validation to the penny
+Quality of Earnings in real time
+Vendor cost benchmarking
+Cash runway and covenant alerts
+Forensic anomaly ﬂags
+VP Sales / BD
+Live buyer intent signals
+AI-drafted outreach ready to send
+Contact dossiers with intro paths
+Competitive intelligence alerts
+Deal velocity tracking
+HR / Talent
+Key employee ﬂight risk signals
+Glassdoor & LinkedIn sentiment
+Hiring avatar from top performers
+Compensation benchmarking
+Culture gap analysis
+
+--- Slide 13 ---
+SOCIAL INTELLIGENCE ENGINE (SIG)
+Market signals delivered with
+strategy and a send button.
+LinkedIn Reddit X / Twitter News Feeds SEC Filings
+Glassdoor Indeed Job Boards Public Records Google Signals
+SIGNAL TYPES JENA DELIVERS
+♔  Competitor posting 12 new roles → growth signal
+♕  Key employee checking job boards → ﬂight risk
+♙  Executive departure at competitor → opportunity
+Every signal includes: What happened · Why it matters · Recommended action · One-click execution
+News Sources Facebook Forums ♖  Target company raising debt → acquisition window
+Internal Data Endpoint Data
+♗  Lookalike client showing buy intent → outreach ready
+Device Data
+♘  Vendor alternative 23% cheaper → cost reduction
+
+--- Slide 14 ---
+BUILT FOR PRIV ATE EQUITY
+From LOI to exit — Jena is the
+operating layer your portfolio needs.
+✦  Underwriting Intelligence
+Upload a CIM. Jena extracts ﬁnancials, identiﬁes risks, maps 
+customer concentration, builds the 4-scenario model. Quality of 
+Earnings in hours not weeks.Digital footprint analyzed.
+⛫  Portfolio Operations
+Every portfolio company gets a Jena instance. Cross-portfolio 
+benchmarking surfaces best practices and replicable wins 
+automatically.
+⛓
+  Value Creation Tracking
+100-day plan execution tracked to the hour. Milestone alerts 
+before they're missed. EBITDA improvement attributed to 
+speciﬁc actions.
+✧  Exit Readiness
+Continuous QoE monitoring. Clean data room built 
+automatically. Management presentation drafted from live 
+operational data.
+✇  Deal Flow Engine
+SIG monitors 10,000+ targets continuously. Signals ranked by ﬁt 
+score. Outreach drafted and sent. Relationship paths mapped.
+⛡  LP Reporting
+Automated LP reports generated from veriﬁed operational data. 
+Quarterly packages delivered in hours. Audit-ready at all times.
+
+--- Slide 15 ---
+PEOPLE + JENA
+Jena doesn't replace people.
+She makes them irreplaceable.
+JENA HANDLES
+✓  Data ingestion, validation, and organization
+✓  Report generation and distribution
+✓  Signal monitoring and alert triage
+✓  Email drafting and outreach preparation
+✓  Calendar management and meeting prep
+✓  Vendor benchmarking and cost analysis
+✓  Compliance monitoring and ﬂag generation
+✓  Repetitive workﬂow execution
+YOUR TEAM DOES
+★  Strategic judgment and creative thinking
+★  Relationship building and trust
+★  Complex negotiation and deal structuring
+★  Ethical risk assessment
+★  Innovation and synthesis
+★  Empathy and emotional intelligence
+★  Ambiguity navigation
+★  Cultural leadership
+
+--- Slide 16 ---
+FINANCIAL INTELLIGENCE
+Forensic-grade ﬁnancial visibility.
+On demand. Every day.
+Daily P&L Validation
+Every transaction validated to source. Anomalies ﬂagged before month-end close. No more 
+audit surprises.
+Quality of Earnings
+Jena runs the QoE continuously. Add-backs identiﬁed, normalized EBITDA calculated, 
+one-time items ﬂagged automatically.
+Vendor Optimization
+Every vendor benchmarked against market. Alternative sourcing identiﬁed. Renegotiation 
+playbooks drafted.
+Cash Flow Forecasting
+Rolling 13-week cash forecast updated daily from actual bank data and AR/AP aging. Covenant 
+breach alerts 30 days out.
+Revenue Intelligence
+Customer concentration mapped. Churn risk modeled. Expansion opportunities identiﬁed and 
+ranked by probability.
+Audit Ready Always
+Complete audit trail for every transaction. Data room auto-assembled from live operational 
+data. Exit in 90 days not 12 months.
+Deloitte-grade methodology. Automated. Continuous. Available to any ﬁrm at any size.
+
+--- Slide 17 ---
+THE BUSINESS CASE
+What the data says about
+businesses that operate like this.
+23%
+Average EBITDA improvement
+in ﬁrst 12 months of AI-assisted ops
+(McKinsey, 2024)
+67%
+Reduction in time spent
+on manual reporting
+(Gartner, 2024)
+3.2×
+Deal sourcing velocity increase
+with AI signal monitoring
+(BCG, 2023)
+$1.4M
+Average annual cost savings
+per 100-person company
+from workﬂow automation
+(Deloitte, 2024)
+4 1%
+Faster due diligence
+when AI assists in
+ﬁnancial analysis
+(PwC, 2024)
+89%
+PE ﬁrms expecting AI to be
+core to operations
+within 3 years
+(Bain, 2024)
+
+--- Slide 18 ---
+Use Cases + JENA
+Jena doesn't replace people.
+She makes them irreplaceable.
+FOR PORTFOLIO COMPANIES
+✓  Underwriting Valuation (Buy Side & Sell Side)
+✓  Auditing Financials, Data, Security, Risks, and Gaps
+✓  EBITDA Growth Management
+✓  Workﬂow & Project Management
+✓  Integrations Management
+✓  Replaces IT Department 
+✓  Data, Document, and Communication Management
+✓  Financial Modeling; LP Positions, Equity Rollover, 
+YOUR TEAM DOES
+★  Strategic judgment and creative thinking
+★  Relationship building and trust
+★  Complex negotiation and deal structuring
+★  Ethical risk assessment
+★  Innovation and synthesis
+★  Empathy and emotional intelligence
+★  Ambiguity navigation
+★  Cultural leadership
+
+--- Slide 19 ---
+PRICING PHILOSOPHY
+Performance-based pricing.
+You only pay for results above where you are today.
+THE GUARANTEE
+Tell us your most expensive problem. We’ll prove the cost down to the minute, then show you exactly where we can reduce it to, and then if we 
+can’t prove a measurable improvement in 30 days, you pay nothing. Keep the audit. 
+AUDIT
+The First Savings Step
+One-time
+Full operational and ﬁnancial audit. Gap analysis. Prioritized 
+action plan. Minimum $20K savings guaranteed. Zero Cost 
+Implementation. Zero Risk Post-Merger Integration Play.
+We’re not selling software. We’re betting on your results. Because 
+our fee is a percentage of what you actually save or earn it means 
+No Delta = No Charge. If JenaSys doesn’t perform, we don’t 
+invoice.
+GROWTH
+$3.6m EBITDA Lift @14% Delta
+Annual
+Full JenaSys deployment. Unlimited users. All integrations. 
+Performance attribution dashboard. Eliminate IT tickets, triage, 
+escalation, outreach, admin overhead, report costs, scheduling, 
+onboarding, reviews, policy, multi-location P&L clarity, and 
+missed opportunities.
+HOW WE PRICE
+Cost & Revenue 
+Performance
+Annual
+Cost Savings: We measure what a process costs you today. We 
+reduce it. We charge 14% of the difference. 
+Revenue Growth: We baseline your organic growth. Anything 
+above it that we drive, we take a % off of that delta only.
+
+--- Slide 20 ---
+PLATFORM ROADMAP
+Built to compound.
+Every cycle makes her smarter.
+Platform Foundation
+Agentic coding | Self aware, Self Healing
+SIG signal monitoring & strategy layered
+Contacts & deal ﬂow intel & propagation
+Reports, dashboard, and tools deployed
+Device bridges & permanent tunnels
+Ingestion & Memory
+Email & calendar ingestion
+Document intelligence pipeline
+Memory compression engine
+Google & Microsoft Graph APIs
+Full workﬂow mapping & management
+Revenue Engine
+Lead dossier builder churning value
+NLP psychological proﬁling
+5-minute alert delivery
+CRM with AI scoring
+Second-degree connection neural paths
+Multi-Tenant & Scale
+Per-tenant schema isolation
+White-label deployment
+Decentralized GPU network
+Proprietary LLM  ﬁne-tuned on portfolio data
+Kronos running market prediction engine
+
+--- Slide 21 ---
+PLATFORM ROADMAP
+Built to be intuitive.
+Dynamic to every user.
+Dynamic Navigation Visibility Across All Data Revenue Engine
+ Built-in LLM
+
+--- Slide 22 ---
+TRADITIONAL ERP
+      $1,500,000          $1,500,000
+Traditional ERP Savings
+IT Department Elimination
+Marketing Cost Reductions
+Social-Driven Revenue Lift
+20% of the 11,500 portfolio companies are on Legacy systems, not just missing out on the EBITDA lift from an ERP, but the true enterprise value lift from JenaSys
+Total Annual EBITDA Lift
+      $0                            $1,500,000
+      $0                            $500,000
+      $60,000                  $120,000
+      $1,560,000          $3,620,000
+
+--- Slide 23 ---
+EXECUTIVE TEAM
+CEO
+Kumar Rachuri
+BIO HEADLINE
+Kumar comes to JenaSys from Oracle 
+where he led industry strategy in Northern 
+America. 
+COO
+John Husband
+BIO HEADLINE
+John comes to us from Microsoft, where he 
+was a director over $1 Bn of Azure. 
+CRO
+Chris Harrell
+BIO HEADLINE
+Chris is the founder and creator of the 
+JenaSys platform, coming to us from Aker 
+private equity, where he held position of 
+Chief Investment Officer. 
+CIO
+Alex Berstein
+BIO HEADLINE
+Alex joined JenaSys… Badass Attorney and 
+wordsmith, a toastmaster who can toast in 8 
+different languages. He’s going to see this 
+slide and patronize Chris about how it looks 
+and reads. :)
+
+--- Slide 24 ---
+The operating system your business has been running without.
+JenaSys is the ﬁrst business operating system that only charges when it performs. 
+Not a subscription. Not a tool. A partner with skin in the game. 
+REQUEST A PRIV ATE INVITE
+Chris Harrell  ·  CIO, Aker Business Inc.  ·  JenaSys
+We’re selectively onboarding 3-5 companies for beta. Each ﬁrm gets Jena fully 
+deployed, fully personalized, with direct access to the founding team. The ﬁrms 
+that move ﬁrst get the deepest integration and the data advantage that 
+compounds from day one. 
+Applications are reviewed by invitation only.
+

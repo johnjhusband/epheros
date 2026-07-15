@@ -1,0 +1,7 @@
+services:
+  web:
+    build: .
+    container_name: epheros-web
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3001:80"
