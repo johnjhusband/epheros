@@ -226,7 +226,7 @@ label.field{display:flex;flex-direction:column;gap:8px;font-size:0.85rem;color:v
   background:var(--card);border:1px solid var(--line);color:var(--fg);padding:12px 14px;
   font-family:inherit;font-size:0.95rem;border-radius:2px;
 }
-.field input:focus,.field textarea:focus{outline:none;border-color:var(--gold)}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px var(--gold-dim)}
 .field textarea{resize:vertical;min-height:110px}
 
 @media (max-width:640px){
