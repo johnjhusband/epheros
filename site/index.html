@@ -3,18 +3,198 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Epheros</title>
+<title>Epheros — Agentic Business Operating System</title>
 <style>
-  html,body{height:100%;margin:0}
-  body{
-    display:flex;align-items:center;justify-content:center;
-    background:#0b0d12;color:#e8eaf0;
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  :root{
+    --bg:#0b0d12; --bg2:#12151d; --fg:#e8eaf0; --muted:#9aa3b2;
+    --accent:#6ee7c8; --line:#232838; --card:#151924;
   }
-  h1{font-weight:600;letter-spacing:0.02em}
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f7f8fa; --bg2:#ffffff; --fg:#141821; --muted:#5b6472; --line:#e4e7ee; --card:#ffffff; }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--fg);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    line-height:1.55;
+  }
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+  header.nav{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:22px 0;border-bottom:1px solid var(--line);
+  }
+  .logo{font-weight:700;font-size:1.15rem;letter-spacing:0.02em}
+  nav a{color:var(--muted);text-decoration:none;margin-left:28px;font-size:0.95rem}
+  nav a:hover{color:var(--fg)}
+  .btn{
+    display:inline-block;background:var(--accent);color:#0b0d12;
+    padding:10px 20px;border-radius:8px;font-weight:600;text-decoration:none;
+    font-size:0.95rem;
+  }
+  section{padding:72px 0}
+  section.hero{padding:96px 0 72px}
+  h1{font-size:2.6rem;line-height:1.15;margin:0 0 20px;max-width:820px}
+  .eyebrow{color:var(--accent);font-weight:600;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:14px}
+  .lede{color:var(--muted);font-size:1.15rem;max-width:640px;margin:0 0 32px}
+  h2{font-size:1.8rem;margin:0 0 12px}
+  .section-lede{color:var(--muted);max-width:640px;margin:0 0 40px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px}
+  .card h3{margin:0 0 10px;font-size:1.05rem}
+  .card p{margin:0;color:var(--muted);font-size:0.95rem}
+  .steps{counter-reset:step}
+  .step{display:flex;gap:20px;padding:22px 0;border-bottom:1px solid var(--line)}
+  .step:last-child{border-bottom:none}
+  .step .n{
+    counter-increment:step;flex:none;width:36px;height:36px;border-radius:50%;
+    background:var(--card);border:1px solid var(--line);
+    display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);
+  }
+  .step h3{margin:0 0 6px;font-size:1.05rem}
+  .step p{margin:0;color:var(--muted);font-size:0.95rem}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:24px;text-align:center}
+  .stat b{display:block;font-size:2rem;color:var(--accent)}
+  .stat span{color:var(--muted);font-size:0.85rem}
+  .cite{color:var(--muted);font-size:0.75rem}
+  .cta{
+    background:var(--card);border:1px solid var(--line);border-radius:16px;
+    padding:48px;text-align:center;
+  }
+  .cta h2{margin-bottom:12px}
+  .cta p{color:var(--muted);margin:0 0 28px}
+  footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-size:0.85rem}
 </style>
 </head>
 <body>
-  <h1>Epheros — coming soon</h1>
+
+<div class="wrap">
+  <header class="nav">
+    <div class="logo">EPHEROS</div>
+    <nav>
+      <a href="#solution">Solution</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#invite" class="btn">Request Invite</a>
+    </nav>
+  </header>
+</div>
+
+<div class="wrap">
+  <section class="hero">
+    <div class="eyebrow">Agentic Business Operating System</div>
+    <h1>The operating system your business has been running without.</h1>
+    <p class="lede">Epheros connects your email, documents, financials, and market signals into one living
+    intelligence layer — ingesting, analyzing, and acting across your entire firm, with zero upfront
+    implementation cost.</p>
+    <a href="#invite" class="btn">Request a Private Invite</a>
+  </section>
+</div>
+
+<div class="wrap">
+  <section id="problem">
+    <div class="eyebrow">The Problem</div>
+    <h2>Every business is drowning in data it cannot use.</h2>
+    <p class="section-lede">Email, CRM, documents, meetings, financials — all disconnected, with no single
+    source of truth. Executives wait days for reports that are already outdated on arrival.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Data Silos</h3>
+        <p>Disconnected systems, no unified view — even with an ERP in place, data stays siloed and out of reach.</p>
+      </div>
+      <div class="card">
+        <h3>Slow Decisions</h3>
+        <p>Reports take days to produce and are stale the moment they land.</p>
+      </div>
+      <div class="card">
+        <h3>Invisible Leakage</h3>
+        <p>Vendor overcharges, missed signals, and lost deals go unnoticed until it's too late.</p>
+      </div>
+      <div class="card">
+        <h3>Manual Everything</h3>
+        <p>High-value people spend their time on copy-paste, status updates, and formatting.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="wrap">
+  <section id="solution">
+    <div class="eyebrow">The Solution</div>
+    <h2>One operating layer across your entire firm.</h2>
+    <p class="section-lede">Epheros isn't another point-solution. It's an operating layer that sits across
+    email &amp; calendar, financial management, documents &amp; CRM, and market signals — ingesting,
+    connecting, analyzing, and acting on your behalf.</p>
+    <div class="grid">
+      <div class="card"><h3>One-Click Auth &amp; Actions</h3><p>Every insight is paired with a next action, ready to execute.</p></div>
+      <div class="card"><h3>Autonomous Execution</h3><p>Repetitive workflow execution without a ticket or a hand-off.</p></div>
+      <div class="card"><h3>Social Intelligence</h3><p>Market, competitor, and talent signals delivered with context and a recommended action.</p></div>
+      <div class="card"><h3>Self-Healing</h3><p>The platform maintains and improves itself as it learns your business.</p></div>
+    </div>
+  </section>
+</div>
+
+<div class="wrap">
+  <section id="how-it-works">
+    <div class="eyebrow">How It Works</div>
+    <h2>Zero-friction setup. Learns your business in hours, not months.</h2>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><div><h3>Browser Install</h3><p>Open a private invite URL, create a password, accept a small desktop bridge download. No IT ticket required.</p></div></div>
+      <div class="step"><div class="n">2</div><div><h3>Automatic Ingestion</h3><p>Scans devices, ingests email (one-click consent), documents, and connected drives.</p></div></div>
+      <div class="step"><div class="n">3</div><div><h3>Profile Construction</h3><p>Builds a picture of role, workflow, tools, and permissions.</p></div></div>
+      <div class="step"><div class="n">4</div><div><h3>Gap Detection</h3><p>Maps current workflow and surfaces the fixes that deliver the most value fastest.</p></div></div>
+      <div class="step"><div class="n">5</div><div><h3>Live Dashboard</h3><p>A personalized, role-aware dashboard appears within hours — every insight validated and actionable.</p></div></div>
+      <div class="step"><div class="n">6</div><div><h3>Continuous Learning</h3><p>Every edit, click, and outcome trains the system, compounding accuracy over time.</p></div></div>
+    </div>
+  </section>
+</div>
+
+<div class="wrap">
+  <section id="evidence">
+    <div class="eyebrow">Why Now</div>
+    <h2>What the data says about businesses that operate like this.</h2>
+    <div class="stats">
+      <div class="stat"><b>23%</b><span>Avg. EBITDA improvement in first 12 months of AI-assisted ops</span></div>
+      <div class="stat"><b>67%</b><span>Reduction in time spent on manual reporting</span></div>
+      <div class="stat"><b>3.2×</b><span>Deal sourcing velocity increase with AI signal monitoring</span></div>
+      <div class="stat"><b>89%</b><span>Of firms expect AI to be core to operations within 3 years</span></div>
+    </div>
+    <p class="cite" style="margin-top:20px">Sources: McKinsey (2024), Gartner (2024), BCG (2023), Bain (2024).</p>
+  </section>
+</div>
+
+<div class="wrap">
+  <section id="pricing">
+    <div class="eyebrow">Pricing Philosophy</div>
+    <h2>Performance-based. You only pay for results above where you are today.</h2>
+    <p class="section-lede">Tell us your most expensive problem. We'll show you exactly where we can reduce
+    it — and if we can't prove a measurable improvement within 30 days, you pay nothing.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Audit — one-time</h3>
+        <p>A full operational and financial audit with a prioritized action plan. Zero cost implementation, zero risk.</p>
+      </div>
+      <div class="card">
+        <h3>Growth — annual</h3>
+        <p>Full deployment across every user and integration, priced as a share of the cost savings and revenue growth we actually deliver. No delta, no charge.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="wrap">
+  <section id="invite">
+    <div class="cta">
+      <h2>Request a Private Invite</h2>
+      <p>We're selectively onboarding a small number of companies. Applications are reviewed by invitation only.</p>
+      <a href="mailto:hello@epheros.ai" class="btn">Get in touch</a>
+    </div>
+  </section>
+</div>
+
+<div class="wrap">
+  <footer>&copy; 2026 Epheros. All rights reserved.</footer>
+</div>
+
 </body>
 </html>
