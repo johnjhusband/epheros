@@ -40,22 +40,22 @@
     <div class="eyebrow">The Problem</div>
     <h2 class="section-title">Four ways the old way breaks down.</h2>
     <div class="grid">
-      <div class="card">
+      <div class="card reveal">
         <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="4" rx="1"/><rect x="3" y="10" width="18" height="4" rx="1"/><rect x="3" y="16" width="18" height="4" rx="1"/></svg>
         <h3>Data silos</h3>
         <p>Even with an ERP in place, data stays siloed in the past and just out of reach.</p>
       </div>
-      <div class="card">
+      <div class="card reveal">
         <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
         <h3>Slow decisions</h3>
         <p>Executives wait days for reports that are already outdated when delivered.</p>
       </div>
-      <div class="card">
+      <div class="card reveal">
         <svg class="icon" viewBox="0 0 24 24"><path d="M3 12l4-7 4 5 4-9 6 11"/><circle cx="19" cy="12" r="1.4"/></svg>
         <h3>Invisible leakage</h3>
         <p>Vendor overcharges, missed signals, wrong hires, lost deals — invisible until too late.</p>
       </div>
-      <div class="card">
+      <div class="card reveal">
         <svg class="icon" viewBox="0 0 24 24"><path d="M4 20l4-4 10-10 3 3-10 10-4 4-3 1z"/></svg>
         <h3>Manual everything</h3>
         <p>High-value people doing low-value work: copy-paste, status updates, formatting, tickets.</p>
@@ -70,24 +70,39 @@
     <h2 class="section-title">One operating layer across your entire firm.</h2>
     <p class="section-lede">Epheros isn't software you buy and implement. It's an operating layer that sits across
       your entire firm and portfolio — ingesting, connecting, analyzing, and acting.</p>
-    <div class="diagram">
-      <div class="hub">
-        <div class="hub-col">
-          <div class="hub-node">Email &amp; Calendar</div>
-          <div class="hub-node">Financial Management &amp; QoE</div>
-          <div class="hub-node">Documents &amp; CRM</div>
-          <div class="hub-node">Market Signals</div>
-        </div>
-        <div class="hub-core">
-          <span class="wordmark">EPHEROS</span>
-          <span>Agentic Business OS</span>
-        </div>
-        <div class="hub-col">
-          <div class="hub-node">Social Intelligence Engine</div>
-          <div class="hub-node">One-Click Auth &amp; Actions</div>
-          <div class="hub-node">Autonomous Execution</div>
-          <div class="hub-node">Self-Coding · Self-Healing</div>
-        </div>
+    <div class="diagram reveal">
+      <svg class="hub-svg" viewBox="0 0 960 400" role="img" aria-label="Epheros diagram: email and calendar, financial management and QoE, documents and CRM, and market signals all flow into the Epheros core, which drives social intelligence, one-click actions, autonomous execution, and self-healing.">
+        <g class="hub-links">
+          <path class="flow-in" d="M290,48 C335,48 335,168 368,168"/>
+          <path class="flow-in" d="M290,128 C335,128 335,168 368,168"/>
+          <path class="flow-in" d="M290,208 C335,208 335,168 368,168"/>
+          <path class="flow-in" d="M290,288 C335,288 335,168 368,168"/>
+          <path class="flow-out" d="M592,168 C625,168 625,48 670,48"/>
+          <path class="flow-out" d="M592,168 C625,168 625,128 670,128"/>
+          <path class="flow-out" d="M592,168 C625,168 625,208 670,208"/>
+          <path class="flow-out" d="M592,168 C625,168 625,288 670,288"/>
+        </g>
+        <circle class="hub-core-pulse" cx="480" cy="168" r="70"/>
+        <foreignObject x="20" y="16" width="270" height="64"><div xmlns="http://www.w3.org/1999/xhtml" class="hub-node-html">Email &amp; Calendar</div></foreignObject>
+        <foreignObject x="20" y="96" width="270" height="64"><div xmlns="http://www.w3.org/1999/xhtml" class="hub-node-html">Financial Management &amp; QoE</div></foreignObject>
+        <foreignObject x="20" y="176" width="270" height="64"><div xmlns="http://www.w3.org/1999/xhtml" class="hub-node-html">Documents &amp; CRM</div></foreignObject>
+        <foreignObject x="20" y="256" width="270" height="64"><div xmlns="http://www.w3.org/1999/xhtml" class="hub-node-html">Market Signals</div></foreignObject>
+        <foreignObject x="670" y="16" width="270" height="64"><div xmlns="http://www.w3.org/1999/xhtml" class="hub-node-html">Social Intelligence Engine</div></foreignObject>
+        <foreignObject x="670" y="96" width="270" height="64"><div xmlns="http://www.w3.org/1999/xhtml" class="hub-node-html">One-Click Auth &amp; Actions</div></foreignObject>
+        <foreignObject x="670" y="176" width="270" height="64"><div xmlns="http://www.w3.org/1999/xhtml" class="hub-node-html">Autonomous Execution</div></foreignObject>
+        <foreignObject x="670" y="256" width="270" height="64"><div xmlns="http://www.w3.org/1999/xhtml" class="hub-node-html">Self-Coding · Self-Healing</div></foreignObject>
+        <foreignObject x="370" y="98" width="220" height="140"><div xmlns="http://www.w3.org/1999/xhtml" class="hub-core-html"><span class="wordmark">EPHEROS</span><span class="hub-core-sub">Agentic Business OS</span></div></foreignObject>
+      </svg>
+      <div class="hub-mobile-fallback">
+        <div class="hub-node-html" style="height:auto;padding:14px">Email &amp; Calendar</div>
+        <div class="hub-node-html" style="height:auto;padding:14px">Financial Management &amp; QoE</div>
+        <div class="hub-node-html" style="height:auto;padding:14px">Documents &amp; CRM</div>
+        <div class="hub-node-html" style="height:auto;padding:14px">Market Signals</div>
+        <div class="hub-core-html" style="height:auto;padding:20px"><span class="wordmark">EPHEROS</span><span class="hub-core-sub">Agentic Business OS</span></div>
+        <div class="hub-node-html" style="height:auto;padding:14px">Social Intelligence Engine</div>
+        <div class="hub-node-html" style="height:auto;padding:14px">One-Click Auth &amp; Actions</div>
+        <div class="hub-node-html" style="height:auto;padding:14px">Autonomous Execution</div>
+        <div class="hub-node-html" style="height:auto;padding:14px">Self-Coding · Self-Healing</div>
       </div>
     </div>
   </section>
@@ -95,7 +110,7 @@
 
 <div class="wrap">
   <section style="padding-top:40px">
-    <div class="feature-row">
+    <div class="feature-row reveal">
       <div class="feature-copy">
         <div class="eyebrow">One-Click Actions</div>
         <h3>Every insight arrives with a next step already attached.</h3>
@@ -114,7 +129,7 @@
       </div>
     </div>
 
-    <div class="feature-row reverse">
+    <div class="feature-row reverse reveal">
       <div class="feature-copy">
         <div class="eyebrow">Autonomous Execution</div>
         <h3>Repetitive workflow, without a ticket or a hand-off.</h3>
@@ -130,7 +145,7 @@
       </div>
     </div>
 
-    <div class="feature-row">
+    <div class="feature-row reveal">
       <div class="feature-copy">
         <div class="eyebrow">Social Intelligence</div>
         <h3>Market, competitor, and talent signals — with context.</h3>
@@ -138,14 +153,14 @@
       </div>
       <div class="feature-visual">
         <div class="signal-panel" style="width:100%">
-          <div class="signal-row"><div><div class="what">Competitor posting 12 new roles</div><div class="why">Growth signal</div></div><b>Flagged</b></div>
-          <div class="signal-row"><div><div class="what">Key employee checking job boards</div><div class="why">Flight risk</div></div><b>Flagged</b></div>
-          <div class="signal-row"><div><div class="what">Vendor alternative 23% cheaper</div><div class="why">Cost reduction</div></div><b>Action ready</b></div>
+          <div class="signal-row reveal"><div><div class="what">Competitor posting 12 new roles</div><div class="why">Growth signal</div></div><b><span class="pulse-dot"></span>Flagged</b></div>
+          <div class="signal-row reveal"><div><div class="what">Key employee checking job boards</div><div class="why">Flight risk</div></div><b><span class="pulse-dot"></span>Flagged</b></div>
+          <div class="signal-row reveal"><div><div class="what">Vendor alternative 23% cheaper</div><div class="why">Cost reduction</div></div><b><span class="pulse-dot"></span>Action ready</b></div>
         </div>
       </div>
     </div>
 
-    <div class="feature-row reverse">
+    <div class="feature-row reverse reveal">
       <div class="feature-copy">
         <div class="eyebrow">Self-Improving</div>
         <h3>The platform gets better at your business, not just at software.</h3>
@@ -171,19 +186,19 @@
       while Epheros autonomously generates the exact digital tools, strategic intelligence, and pre-emptive
       workflows a company needs.</p>
     <div class="grid cols-2">
-      <div class="card">
+      <div class="card reveal">
         <h3>Autonomous Enterprise Mesh Intelligence</h3>
         <p>Dynamic tunnel-mesh protocols, idle-resource arbitration by business priority, and self-healing backup topology across decentralized endpoints.</p>
       </div>
-      <div class="card">
+      <div class="card reveal">
         <h3>Pre-Cognitive Automation</h3>
         <p>Zero-latency intent prediction from operational metadata, strategic annotation layers, and one-click action propagation with role-aware permissions.</p>
       </div>
-      <div class="card">
+      <div class="card reveal">
         <h3>Autonomous Software Genesis</h3>
         <p>Data-driven tool generation, a self-modifying architecture, and autonomous UI/UX adaptation by user and tenant.</p>
       </div>
-      <div class="card">
+      <div class="card reveal">
         <h3>Real-Time Strategy OS</h3>
         <p>Market-and-organization fusion, operational metadata valuation, and dynamic risk/opportunity classification.</p>
       </div>
@@ -198,7 +213,7 @@
     <p class="section-lede">From the CEO's portfolio health score to the CFO's daily P&amp;L validation, each
       role gets a dashboard built around what actually matters to their job.</p>
     <div class="grid">
-      <div class="card">
+      <div class="card reveal">
         <h3>CEO / Managing Partner</h3>
         <ul>
           <li>Market position vs. competitors</li>
@@ -207,7 +222,7 @@
           <li>Deal flow pipeline with AI scoring</li>
         </ul>
       </div>
-      <div class="card">
+      <div class="card reveal">
         <h3>CFO / Finance</h3>
         <ul>
           <li>Daily P&amp;L validation to the penny</li>
@@ -216,7 +231,7 @@
           <li>Cash runway and covenant alerts</li>
         </ul>
       </div>
-      <div class="card">
+      <div class="card reveal">
         <h3>VP Sales / BD</h3>
         <ul>
           <li>Live buyer intent signals</li>
@@ -225,7 +240,7 @@
           <li>Deal velocity tracking</li>
         </ul>
       </div>
-      <div class="card">
+      <div class="card reveal">
         <h3>HR / Talent</h3>
         <ul>
           <li>Key employee flight-risk signals</li>
@@ -240,12 +255,12 @@
 
 <div class="wrap">
   <section style="padding-top:0">
-    <div class="cta-band">
+    <div class="cta-band reveal">
       <div>
         <h2>See it in action</h2>
         <p>Walk through the six-phase onboarding that gets Epheros running across your firm in hours, not months.</p>
       </div>
-      <a href="/how-it-works" class="btn">How It Works</a>
+      <a href="/how-it-works" class="btn">How It Works <span class="arrow">→</span></a>
     </div>
   </section>
 </div>
@@ -264,6 +279,8 @@
     </nav>
   </div>
 </footer>
+
+<script src="/assets/interactions.js"></script>
 
 </body>
 </html>
