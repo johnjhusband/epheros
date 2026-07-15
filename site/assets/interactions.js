@@ -40,6 +40,8 @@
   // ---- count-up stats ----
   var statEls = document.querySelectorAll('.stat b[data-target]');
   function countUp(el) {
+    if (el.dataset.counted) return;
+    el.dataset.counted = '1';
     var target = parseFloat(el.getAttribute('data-target'));
     var suffix = el.getAttribute('data-suffix') || '';
     var decimals = el.getAttribute('data-decimals') ? parseInt(el.getAttribute('data-decimals'), 10) : 0;
@@ -70,9 +72,18 @@
             }
           });
         },
-        { threshold: 0.4 }
+        { threshold: 0 }
       );
-      statEls.forEach(function (el) { statIo.observe(el); });
+      statEls.forEach(function (el) {
+        var rect = el.getBoundingClientRect();
+        var alreadyVisible = rect.top < window.innerHeight * 1.1 && rect.bottom > 0;
+        if (alreadyVisible) {
+          countUp(el);
+        } else {
+          statIo.observe(el);
+        }
+      });
+      setTimeout(function () { statEls.forEach(countUp); }, 1200);
     } else {
       statEls.forEach(countUp);
     }
